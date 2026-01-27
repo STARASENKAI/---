@@ -2,6 +2,32 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Заставка */
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111; /* тёмный фон */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  z-index: 9999;
+  animation: fadeOut 2s ease forwards; /* анимация исчезновения */
+  animation-delay: 2s; /* показываем 2 секунды */
+}
+
+/* Анимация */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background-color: #f8fafc;
@@ -171,3 +197,4 @@ footer {
   background-color: #e0f2fe;
 
 }
+
